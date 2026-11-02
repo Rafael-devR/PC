@@ -26,7 +26,7 @@ on:
       packages:
         description: "Programas extras via Chocolatey (separados por espaço). Ex: googlechrome 7zip vscode"
         type: string
-        default: ""
+        default: "vscode googlechrome 7zip git godot steam"
 
 # Evita duas sessões ao mesmo tempo gastando minutos à toa
 concurrency:
@@ -38,7 +38,7 @@ defaults:
     shell: pwsh
 
 env:
-  RDP_USER: Skyro
+  RDP_USER: Rafael-devR
   TS_FALLBACK_VERSION: "1.82.0"
 
 jobs:
